@@ -1,17 +1,5 @@
 {
   "framework": "nextjs",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/",
-      "headers": {
-        "Cache-Control": "public, max-age=0, must-revalidate",
-        "X-Frame-Options": "SAMEORIGIN"
-      }
-    }
-  ],
-  "github": { "enabled": false },
-  "git": { "forkProtection": false },
   "security": {
     "botProtection": false
   }
