@@ -1,11 +1,13 @@
 {
-  "headers": [
+  "framework": "nextjs",
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex" },
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
+      "src": "/(.*)",
+      "dest": "/",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate",
+        "X-Frame-Options": "SAMEORIGIN"
+      }
     }
   ],
   "github": { "enabled": false },
